@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toa</title>
+<link rel="stylesheet" href="style.css">
+  <style>
+    spline-viewer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1; /* Push behind all other elements */
+    }
+
+    main {
+      position: relative; /* Bring above 3D background */
+      z-index: 1;
+    }
+  </style>
+   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.22/build/spline-viewer.js"></script>
+</head>
+<body>
+     <spline-viewer url="https://prod.spline.design/rIvxMaymeN4NKKUt/scene.splinecode"></spline-viewer>
+    <main>
+        <h1 class="title">TIC TAC TOE</h1>
+        <div class="msg-container hide">
+          <p class="msg">Winner</p>
+          <button class="new-btn">New Game</button>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button class="resetbtn">Reset Button</button>
+    
+    </main>
+
+<script src="app.js"></script>
+</body>
+</html>
